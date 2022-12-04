@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(74, 74, 62);
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background:white;
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color:BLACK;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+table form tr td{
+    width:140px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field button{
+    color: #fff;
+    background-color: bLACK;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #292525;
+}
+
+
+.form .field2{
+    padding-left: 50px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field2 button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field2 button{
+    color: #fff;
+    background-color: bLACK;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field2 button a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.field2 button:hover{
+    background-color: #292525;
+}
+
+
+    </style>
+
+</head>
+<body>
+<section class="container">
+
+
+
+
+
+
+
+    <div class="form">
+    <div class="form-content">
+                    <header color: white>Add New Items</header>
+	<table style="width:100%;margin:40px 55px 0px 55px;">
+		<form action="prodin.php" method="post">
+			<tr>
+				<td>
+                <label for="name">Category Name</label>
+				</td>
+				<td>
+                <input type="text" name="name" id="name">
+				</td>
+			</tr>
+            <tr>
+				<td>
+                <label for="name">Product Name</label>
+				</td>
+				<td>
+                <input type="text" name="proname" id="name">
+				</td>
+			</tr>
+            <tr>
+				<td>
+                    <label for="id">Serial ID</label>
+				</td>
+				<td>
+                    <input type="text" name="sid" id="id">
+				</td>
+			</tr>
+            <tr>
+				<td>                   			
+                    <label for="date">Purchase Date</label>
+				</td>
+				<td>                                
+                    <input type="date" name="pdate" id="date">
+				</td>
+			</tr>
+            <tr>
+				<td>                   				
+                    <label for="date">Expiry Date</label>
+				</td>
+				<td>                              
+                    <input type="date" name="edate" id="date">
+				</td>
+			</tr>
+			<tr>
+                <td>                   				
+                    <label for="img">Uplode Invoice</label>
+				</td>
+				<td>                  
+                    <input type="file" name="bill" id="bill" style="box-sizing: unset;">
+				</td>
+			</tr>
+			<tr>
+				<td>                 
+                    <label for="Write Note">Remark</label>
+				</td>
+				<td>                       
+                    <textarea name="remark" cols="" rows="" id="Write Note"></textarea>
+				</td>
+			</tr>
+		
+	</table>
+                    <div style="padding: 3vh 20vh;
+    display: flex;
+    justify-content: space-ben;">
+                    <div class="field" style="width: 140px;">
+                           <button name="submit_btn" type="submit">Save</button>
+                           </div>
+                    <div class="field2" style="width: 140px;">     
+                           <button><a href="dashboard.html">Back</a></button>
+                        </div>
+                       
+                    </form>
+                    </div>
+     </div>   
+    
+    <!------------------------------------------------------------------>
+                   
+</div>
+</section>
+</body>
+</html>
